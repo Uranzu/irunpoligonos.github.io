@@ -12,19 +12,19 @@ var wms_layers = [];
                 url: 'http://tile.openstreetmap.org/{z}/{x}/{y}.png'
             })
         });
-var lyr_PoligonosIrun_modificado2_1 = new ol.layer.Image({
+var lyr_PoligonosIrun_recortado_1 = new ol.layer.Image({
                             opacity: 1,
-                            title: "Poligonos Irun_modificado2",
+                            title: "Poligonos Irun_recortado",
                             
                             
                             source: new ol.source.ImageStatic({
-                               url: "./layers/PoligonosIrun_modificado2_1.png",
+                               url: "./layers/PoligonosIrun_recortado_1.png",
     attributions: ' ',
                                 projection: 'EPSG:3857',
                                 alwaysInRange: true,
-                                imageExtent: [-204335.701831, 5360811.408638, -194893.770443, 5365609.270615]
+                                imageExtent: [-204317.060300, 5361233.173100, -194961.345900, 5365532.374300]
                             })
                         });
 
-lyr_OSMStandard_0.setVisible(true);lyr_PoligonosIrun_modificado2_1.setVisible(true);
-var layersList = [lyr_OSMStandard_0,lyr_PoligonosIrun_modificado2_1];
+lyr_OSMStandard_0.setVisible(true);lyr_PoligonosIrun_recortado_1.setVisible(true);
+var layersList = [lyr_OSMStandard_0,lyr_PoligonosIrun_recortado_1];
